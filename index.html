@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather and Music Dashboard</title>
+        <link rel="stylesheet" href="assets/css/weatherApp.css" />
+    </head>
+    <body>
+        <!-- Container for app. -->
+        <div id="appContainer">
+            <h1>Weather & Radio App</h1>
+
+            <!-- Input field for entering location (city or ZIP code). -->
+            <input
+                type="text"
+                id="location"
+                placeholder="Enter a city or ZIP code"
+            />
+            <!-- Placeholder text for guidance.-->
+
+            <!-- Button to trigger fetch weather and music functionality. -->
+            <button id="fetchButton">Get Weather & Music</button>
+
+            <!-- Button to toggle sync mode for simulating delays. -->
+            <button id="toggleSyncMode">Enable Sync Mode</button>
+
+            <!-- Loading message shown during fetch operations. -->
+            <div id="loading">Loading...</div>
+
+            <!-- Weather data will be displayed here. -->
+            <div id="weather"></div>
+
+            <!-- Music station info will be displayed here. -->
+            <div id="music"></div>
+        </div>
+
+        <script src="assets/js/weatherApp.js"></script>
+    </body>
+</html>
